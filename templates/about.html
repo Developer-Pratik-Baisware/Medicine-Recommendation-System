@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About - MEDICINATION</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')}}">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+</head>
+<body>
+	<div id="header">
+		<a href="{{ url_for('home_page') }} " class="logo">
+			<img src="{{ url_for('static',filename='images/logo1.jpg') }} " alt="">
+		</a>
+		<ul id="navigation">
+			<li>
+				<a href="{{ url_for('home_page') }} ">home</a>
+			</li>
+			<li class="selected">
+				<a href="{{ url_for('about_page') }} ">about</a>
+			</li>
+			<li>
+				<a href="{{ url_for('contact_page') }} ">contact</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+		<h1><span>Medicine Recommendation System</span>
+			<span>using Machine Learning</span></h1>
+		<div>
+			<img src="{{ url_for('static',filename='images/medicine2.jpg') }} " alt="">
+			<div class="article">
+
+
+				<h3>Our Aim</h3>
+				<p>
+					To design and implement a system that will recommend medicine according to the symptoms using Machine Learning and python tkinter.
+				</p>
+
+
+				<h3>Introduction</h3>
+				<p>
+					Our medicine recommendation system will capable of accurately predicting medication based on users’ input of diseases/ symptoms. Medicine recommendation system will be an essential tool in the hands of the doctors who under heavy workload 24x&.
+				</p>
+
+
+				<h3>Problem Definition </h3>
+				<p>
+					A vast amount of clinical data scattered across different sites on the Internet hinders users from finding helpful information for their well-being improvement. Besides, the overload of medical information (e.g., on drugs, medical tests, and treatment suggestions) have brought many difficulties to medical professionals in making patient-oriented decisions. These issues raise the need to apply recommender systems in the healthcare domain to help both, end-users and medical professionals, make more efficient and accurate health-related decisions.
+
+				</p>
+
+
+				<h3>Objectives</h3>
+				<p>
+					Our review suggests to extend the existing solutions by adding recommendations for the dosage of drugs, as well as building highly scalable solutions.
+				</p>
+			</div>
+			<img src="{{ url_for('static',filename='images/medicine3.jpg') }} " alt="">
+		</div>
+	</div>
+	<div id="footer">
+	</div>
+</body>
+</html>

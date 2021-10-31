@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Medicine</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')}}">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+</head>
+<body>
+	<div id="header">
+		<a href="{{ url_for('home_page') }} " class="logo">
+			<img src="{{ url_for('static',filename='images/logo1.jpg') }} " alt="">
+		</a>
+		<ul id="navigation">
+			<li>
+				<a href="{{ url_for('home_page') }} ">home</a>
+			</li>
+	</div>
+	<div id="body">
+		<h1><span>Enter your symptoms</span></h1>
+		<div>
+			<form action="blog-single-post.html">
+				<input type="text" name="fname" id="fname" value="symptoms 1">
+				<input type="text" name="address" id="address" value="symptoms 2">
+				<input type="text" name="email" id="email" value="symptoms 3">
+				<input type="text" name="phone" id="phone" value="symptoms 4">
+				<input type="submit" name="send" id="send" value="Check">
+			</form>
+			<img src="{{ url_for('static',filename='images/medicine4.jpg') }} " alt="">
+		</div>
+	</div>
+	<div id="footer">
+	</div>
+</body>
+</html>

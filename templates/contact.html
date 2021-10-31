@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact - MEDICINATION</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')}}">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html" class="logo">
+			<img src="{{ url_for('static',filename='images/logo1.jpg') }} " alt="">
+		</a>
+		<ul id="navigation">
+			<li>
+				<a href="{{ url_for('home_page') }} ">home</a>
+			</li>
+			<li>
+				<a href="{{ url_for('about_page') }} ">about</a>
+			</li>
+			<li class="selected">
+				<a href="{{ url_for('contact_page') }} ">contact</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+		<h1><span>CONTACT US</span></h1>
+		<form method='POST'  action='/send' >
+			<input type="text" name="name" id="name" value="name">
+			<input type="text" name="address" id="address" value="address">
+			<input type="text" name="email" id="email" value="email">
+			<input type="text" name="phone" id="phone" value="phone number">
+			<textarea name="message" id="message" value="message">message</textarea>
+			<input type="submit" name="send" id="send" value="send">
+		</form>
+		<img src="{{ url_for('static',filename='images/contact.png') }} " alt="">
+	</div>
+	<div id="footer">
+	</div>
+</body>
+</html>
